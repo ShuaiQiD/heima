@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>表格目前做数据展示</center>
+<center>table表示表格的整体，里边嵌套tr，tr表示行，tr里边嵌套th或者td，th表示表头单元格，td表示普通单元格</center>
+<center>border表格的边框粗细</center>
+<center>rules：取值为all，就可以实现细线表格样式，后期用css实现</center>
+<center>cellpadding:规定字体与单元格边沿的空白距离，后期用css实现</center>
+<center>cellspacing：设置单元格之间的距离，一般取值为0或者不设置。会和rules重合，默认读取rules</center>
+<center>align：设置表格对其方式，取值为left，center，right。默认left，影响表格整体，不会影响th和td</center>
+<center>caption双标签，写在table里边，表格的标题</center>
+<center>操作多行代码，方法一：按住鼠标滚轮，向下拖拽鼠标。方法二：按住shift和alt，按住鼠标左键向下选择</center>
+<table border="1"  cellpadding="20px" cellspacing="10" rules="all" align="center">
+    <caption><h4>成绩表单</h4></caption>
+    <tr>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>成绩</th>
+    </tr>
+    <tr>
+        <td>老王</td>
+        <td>16</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>老张</td>
+        <td>19</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>老李</td>
+        <td>20</td>
+        <td>100</td>
+    </tr>
+</table>
+</body>
+</html>
