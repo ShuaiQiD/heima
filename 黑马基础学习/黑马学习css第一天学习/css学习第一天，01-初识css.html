@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <center>浏览器解析到此处就会将style标签里边的代码按照css的语法规范进行解析</center>
+    <style>
+        /*选择div标签，{}里面是对选择的div设置样式*/
+        /*内部样式，在head标签里边写css样式*/
+        div{
+            font-size: 80px;
+            color: #cc0000;
+        }
+        .div1{
+            width: 100px;
+            height: 50px;
+            background-color: #cc0000;
+        }
+    </style>
+<!--    外部链接样式 link-->
+    <link rel="stylesheet" href="./div2.css">
+</head>
+<body>
+<center>css用来美化页面</center>
+<center>
+    行内样式
+    在标签里边写入css样式
+    没有实现结构，样式分离，不方便维护
+</center>
+<center>新建css样式三个步骤
+第一步骤新建一个css文件夹，然后在css文件夹中新建.css后缀的文件
+第二步骤在对应的html文件中用link引入.css文件
+第三步骤在css文件中书写css样式</center>
+<div style="color: #cc0000; font-size: 80px">行内样式</div>
+<div>内部样式</div>
+<div class="div1"></div>
+<div class="div2"></div>
+</body>
+</html>

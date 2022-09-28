@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .a{
+            width: 360px;
+            height: 20px;
+            background-color: #333333;
+        }
+        .b{
+            width: 10%;
+            height: 20px;
+            background-color: #f77321;
+        }
+
+        /*.a:hover .b{*/
+        /*    width: 100%;*/
+        /*    height: 20px;*/
+        /*    background-color: #f77321;*/
+        /*    transition: all .6s;*/
+        /*}*/
+        .a:hover .b{
+            /*鼠标经过a的时候作用于b*/
+            width: 360px;
+            height: 20px;
+            background-color: #f77321;
+            transition: all 6s;
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+    <div class="b"><a href="#"></a> </div>
+</div>
+<!--<div class="b"><a href="#"></a></div>-->
+</body>
+</html>

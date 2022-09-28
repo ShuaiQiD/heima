@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>label 标签可以扩大表单控件的选择范围，label有一个for属性， 我们可以取值为对应的表单控件id的值</center>
+<center>方法1：给input控件设置一个id值</center>
+<center>将input对应的提示文本用label包裹，然后设置label的for值为对应的表单控件的id值</center>
+<form action="">
+    <label for="one">    用户名：</label>
+    <input type="text" name="" id="one">
+    <br> <br>
+    <label for="two">    密码：</label>
+    <input type="password" name="" id="two">
+    <br> <br>
+    <center>方法2：直接将表单控件和对应的提示文本包裹在label中，此时label不需要for属性</center>
+    <label>    <input type="radio" name="sex" id="">男</label>
+    <label>    <input type="radio" name="sex" id="">女</label>
+</form>
+</body>
+</html>
