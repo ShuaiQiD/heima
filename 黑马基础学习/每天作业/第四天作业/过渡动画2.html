@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .a{
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background-color: #00CCFF;
+        }
+        .b{
+            width: 300px;
+            height: 25px;
+            background-color: #f77321;
+        }
+        .c{
+            width: 50px;
+            height: 25px;
+            background-color: #cc0000;
+        }
+        .b:hover .c{
+            width: 300px;
+            background-color: #cc0000;
+            transition: all .6s;
+        }
+    </style>
+</head>
+<body>
+<div class="a"></div>
+<div class="b">
+    <div class="c"></div>
+</div>
+</body>
+</html>

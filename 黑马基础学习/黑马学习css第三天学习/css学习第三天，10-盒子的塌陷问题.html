@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>盒子塌陷问题</center>
+<center>上下盒子外边距合并问题</center>
+<center>上下排列的两个盒子，两个盒子的上，下外边距显示，大的外边距会合并小的外边距</center>
+<center>解决方法一：只设置给其中的一个盒子即可</center>
+<center>解决方法二：将两个盒子分别装进各自的父级盒子，然后给父级盒子开启bfc模式</center>
+<center>bfc模式是什么意思：bfc是一个独立的布局环境，bfc里面的子元素不会影响外界元素，所以我们可以用bfc来解决外边距塌陷，外边距合并，清除浮动等问题</center>
+<center>bfc开启方式：给两个盒子的父级盒子添加display：flow-root。voerflow：hidden</center>
+<center>嵌套的盒子外边距塌陷，外边距塌陷</center>
+<center>方法一：给父级盒子添加bfc</center>
+<center>方法二：border方法，给父级盒子设置border，但是必须设置border-top</center>
+<center>方法三：padding方法，给父级盒子设置padding，但是必须是padding-top</center>
+</body>
+</html>

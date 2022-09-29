@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    /*通配符选择器权重最低0*/
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /*标签选择器为1*/
+    div{
+      width: 100px;
+      height: 100px;
+    }
+    /*类选择器的权重为10*/
+    .box{
+      width: 100px;
+      height: 100px;
+    }
+    /*id选择器100*/
+    #id{
+      width: 100px;
+      height: 100px;
+    }
+    /*行内样式为1000*/
+  </style>
+</head>
+<body>
+<center>css三大特性，权重优先级</center>
+<center>不同的选择器选择元素权重大小不同，我们以基础选择器为参照，计算出我们自己选择器权重大小</center>
+<center>基本计算</center>
+<center>重点继承性和通配符选择器是没有权重的，如果当前元素有自己的样式，就不会继承父级样式，所以继承性和通配符选择器权重为0</center>
+<center>权重叠加，权重叠加不会有进位的，每一个基础选择器只能在自己的位置叠加，如果超过10也不可以往前边进位。</center>
+<center>权重优先级</center>
+<center>继承性和通配符选择器的权重为0</center>
+<center>标签选择器，伪元素的权重为0，0，0，1</center>
+<center>类选择器，伪类选择器，属性选择器的权重为0，0，1，0</center>
+<center>id选择器的权重为0，1，0，0</center>
+<center>行内选择器的权重为1，0，0，0</center>
+<center>设置样式！important提高权重，权重是无限大的，都提权重了吗，还是比较选择器</center>
+</body>
+</html>

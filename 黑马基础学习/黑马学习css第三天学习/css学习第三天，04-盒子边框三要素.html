@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            /*background-color: #333333;*/
+            /*border-style: solid;*/
+            border: solid red 2px;
+        }
+        .box2{
+            width: 100px;
+            height: 200px;
+            border-top: solid pink 2px;
+            border-left: solid chartreuse 2px;
+            border-left-color: #ff4c00;
+            border-right: solid #333333 2px;
+            border-bottom: solid #333333 2px;
+            border-bottom-width: 3px;
+            border-bottom-style: dashed;
+        }
+    </style>
+</head>
+<body>
+<center>border:边框的三要素</center>
+<center>
+    border-styler:none默认取值没有边框,solid实线,dashed虚线,dotted点线,double双线
+    border-width:数值px
+    border-color:颜色
+</center>
+<center>盒子设置不同方向描边</center>
+<center>盒子不同方向边框语法:border-方向名词:线条 线条粗细 线条颜色</center>
+<center>top是上  bottom是下  left是左  right是有</center>
+<center>设置一个方向的属性</center>
+<center>设置一个方向的属性值,border-方位名词-属性</center>
+<div class="box"></div>
+<div class="box2"></div>
+</body>
+</html>
